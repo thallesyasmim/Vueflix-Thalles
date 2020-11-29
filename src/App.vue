@@ -1,28 +1,35 @@
 <template>
+
+  <!-- Estrutura -->
+
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+      <!-- Fazendo as rotas ficarem visiveis | Intermediação das rotas -->
+     <router-view></router-view>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  // Exportação do nosso componente principal
+
+  export default {
+    name: 'App',
+  };
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
+  /* Estilizações */ 
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #141414;
+    height: 100vw;
+    font-family: 'Roboto', sans-serif;
+  }
 </style>
