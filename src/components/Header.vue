@@ -44,6 +44,8 @@
       </form>
     </div>
     <div id="icons">
+      <img class="mobile-search" src="../assets/search.png" alt="Icone de pesquisa" />
+      <span></span>
       <v-icon name="bell" scale="1.3" color="#e5e5e5" />
       <span></span>
       <v-icon name="user-circle" scale="2" color="#e5e5e5" />
@@ -216,6 +218,10 @@
         display: none;
     }
 
+    .mobile-search {
+        display: none;
+    }
+
     /* Estilizações em determinados Break Points */ 
 
 
@@ -324,7 +330,19 @@
 
     @media only screen and (max-width: 425px) {
         #navigate {
-            margin-left: 7px;
+            margin-left: 12px;
+        }
+
+        #textForm {
+            display: none;
+        }
+
+        #icons {
+            width: 35%;
+        }
+
+        .mobile-search {
+            display: block;
         }
     }
 
@@ -341,6 +359,23 @@
             margin-left: 3px;
             margin-top: 0px;
             font-size: 12.5px;
+        }        
+    }
+
+    @media only screen and (max-width: 299px) {     
+        #selections {
+            margin-top: 60px;
+        }
+
+         #navigate {
+            margin-left: 1px;
+        }        
+    }
+
+      @media only screen and (max-width: 290px) {     
+         #navigate {
+            margin-left: 0px;
+            margin-right: 2px;
         }        
     }
 </style>

@@ -199,6 +199,10 @@
             font-size: 17px;
         }
 
+        .containerReleases h1::after {
+            display: none;
+         }
+
         .containerReleases p {
             font-size: 11px;
         }
